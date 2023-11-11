@@ -1,5 +1,7 @@
 import "../style/Trending.css"
 
+import NavBar from "./NavBar";
+
 import eagles from "../images/eagles.png"
 import gfire from "../images/green-fire-icon.png"
 
@@ -38,6 +40,8 @@ export default function Trending() {
                 <p id="author"> Will Smith </p>
                 <p id="date"> February 11, 2024</p>
             </div>
+
+            <NavBar/> 
         </div>
     )
 }

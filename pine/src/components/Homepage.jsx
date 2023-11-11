@@ -2,51 +2,121 @@ import "../style/Homepage.css"
 import { v4 as uuidv4 } from "uuid";
 import Card from "./homepage_carousel/Card";
 import Carousel from "./homepage_carousel/Carousel";
+import NavBar from "./NavBar";
+
+import background from "../images/football.jpeg"
+import eagles from "../images/eagles.png"
 
 export default function Homepage() {
     let cards = [
         {
+            key: uuidv4(),
+            content: (
+            <Card 
+                background={background} 
+                heading="EAGLES WIN SUPER BOWL LVIII"
+                subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
+                author="Will Smith"
+                date="February 11, 2024"
+                image={eagles}
+                credits="Photo by Corey Perrine"
+                body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
+                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
+                By Monday morning, plants and street signs were uprooted and cars were flipped over as 
+                fans celebrated a win."/>
+            )
+        },
+        {
           key: uuidv4(),
           content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg" />
+            <Card 
+                background={background} 
+                heading="EAGLES WIN SUPER BOWL LVIII 2"
+                subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
+                author="Will Smith"
+                date="February 11, 2024"
+                image={eagles}
+                credits="Photo by Corey Perrine"
+                body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
+                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
+                By Monday morning, plants and street signs were uprooted and cars were flipped over as 
+                fans celebrated a win."/>
+            )
+        },
+        {
+          key: uuidv4(),
+          content: (
+            <Card 
+                background={background} 
+                heading="EAGLES WIN SUPER BOWL LVIII 3"
+                subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
+                author="Will Smith"
+                date="February 11, 2024"
+                image={eagles}
+                credits="Photo by Corey Perrine"
+                body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
+                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
+                By Monday morning, plants and street signs were uprooted and cars were flipped over as 
+                fans celebrated a win."/>
           )
         },
         {
           key: uuidv4(),
           content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
+            <Card 
+                background={background}
+                heading="EAGLES WIN SUPER BOWL LVIII 4"
+                subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
+                author="Will Smith"
+                date="February 11, 2024"
+                image={eagles}
+                credits="Photo by Corey Perrine"
+                body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
+                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
+                By Monday morning, plants and street signs were uprooted and cars were flipped over as 
+                fans celebrated a win."/>
           )
         },
         {
           key: uuidv4(),
           content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
-          )
-        },
-        {
-          key: uuidv4(),
-          content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
-          )
-        },
-        {
-          key: uuidv4(),
-          content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
+            <Card 
+                background={background} 
+                heading="EAGLES WIN SUPER BOWL LVIII 5"
+                subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
+                author="Will Smith"
+                date="February 11, 2024"
+                image={eagles}
+                credits="Photo by Corey Perrine"
+                body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
+                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
+                By Monday morning, plants and street signs were uprooted and cars were flipped over as 
+                fans celebrated a win."/>
           )
         }
     ];
     
     return (
-        <div className="cards">
-          <Carousel
-            cards={cards}
-            height="500px"
-            width="35%"
-            margin="0 auto"
-            offset={2}
-            showArrows={false}
-          />
+        <div>
+            <p id="user"> Good morning, Peter! </p>
+            <p id="news"> Your daily news updates are ready. </p>
+            <div id="cards">
+                <Carousel
+                    cards={cards}
+                    height="400px"
+                    width="30%"
+                    margin="0 auto"
+                    offset={2}
+                    showArrows={false}
+                />
+            </div>
+            <NavBar/> 
         </div>
+        
     );
 }

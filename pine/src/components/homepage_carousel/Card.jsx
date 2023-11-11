@@ -1,31 +1,31 @@
-import Styles from "./Card.module.css";
+import "./Card.css";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
-function Card({ imagen }) {
+function Card(props) {
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
     transform: show ? "scale(1.03)" : "scale(1)",
-    boxShadow: show
-      ? "0 20px 25px rgb(0 0 0 / 25%)"
-      : "0 2px 10px rgb(0 0 0 / 8%)"
+    boxShadow: "0 0px 50px rgb(255 255 255 / 40%)",
+    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))," + `url(${props.background})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
   });
-  
+
   return (
     <animated.div
-      className={Styles.card}
+      class="card"
       style={props3}
       onMouseEnter={() => setShown(true)}
       onMouseLeave={() => setShown(false)}
     >
-      <img src={imagen} alt="" />
-      <h2>Title</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
-      </p>
+      <div
+        onClick={() => show ? console.log(props.heading) : null}>
+        <h2 className="heading">{props.heading}</h2>
+        <p className="subheading">{props.subheading}</p>
+      </div>
     </animated.div>
   );
 }

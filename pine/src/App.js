@@ -11,6 +11,7 @@ import Profile from "./components/Profile.jsx";
 import Saved from "./components/Saved.jsx"; 
 import ScrollToTop from './components/ScrollToTop';
 
+import './App.css';
 
 function App() {
 	return (

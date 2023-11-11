@@ -1,7 +1,23 @@
 html, body {
     margin:0px;
-    height:100%;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 1));
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
-.cards {
+#user {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
+    margin-top: 120px;
+    margin-bottom: 2px;
+    font-size: larger;
+}
+
+#news {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
+    margin-top: 0;
 }
