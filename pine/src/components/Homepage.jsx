@@ -5,7 +5,7 @@ import Carousel from "./homepage_carousel/Carousel";
 import NavBar from "./NavBar";
 
 import background from "../images/football.jpeg"
-import eagles from "../images/eagles.png"
+import eagles from "../images/img.jpeg"
 
 export default function Homepage() {
     let cards = [
@@ -14,6 +14,7 @@ export default function Homepage() {
             content: (
             <Card 
                 background={background} 
+                cover={eagles}
                 heading="EAGLES WIN SUPER BOWL LVIII"
                 subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
                 author="Will Smith"
@@ -21,7 +22,11 @@ export default function Homepage() {
                 image={eagles}
                 credits="Photo by Corey Perrine"
                 body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
-                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                its second Super Bowl victory. /n Eagles fans celebrated the historic win by pouring into 
+                the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
+                By Monday morning, plants and street signs were uprooted and cars were flipped over as 
+                fans celebrated a win. /n Philadelphia Eagles fans went wild after their team made history Sunday night with 
+                its second Super Bowl victory. /n Eagles fans celebrated the historic win by pouring into 
                 the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
                 By Monday morning, plants and street signs were uprooted and cars were flipped over as 
                 fans celebrated a win."/>
@@ -32,6 +37,7 @@ export default function Homepage() {
           content: (
             <Card 
                 background={background} 
+                cover={eagles}
                 heading="EAGLES WIN SUPER BOWL LVIII 2"
                 subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
                 author="Will Smith"
@@ -39,7 +45,7 @@ export default function Homepage() {
                 image={eagles}
                 credits="Photo by Corey Perrine"
                 body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
-                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                its second Super Bowl victory. /n Eagles fans celebrated the historic win by pouring into 
                 the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
                 By Monday morning, plants and street signs were uprooted and cars were flipped over as 
                 fans celebrated a win."/>
@@ -49,7 +55,8 @@ export default function Homepage() {
           key: uuidv4(),
           content: (
             <Card 
-                background={background} 
+                background={background}
+                cover={eagles} 
                 heading="EAGLES WIN SUPER BOWL LVIII 3"
                 subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
                 author="Will Smith"
@@ -57,7 +64,7 @@ export default function Homepage() {
                 image={eagles}
                 credits="Photo by Corey Perrine"
                 body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
-                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                its second Super Bowl victory. /n Eagles fans celebrated the historic win by pouring into 
                 the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
                 By Monday morning, plants and street signs were uprooted and cars were flipped over as 
                 fans celebrated a win."/>
@@ -68,6 +75,7 @@ export default function Homepage() {
           content: (
             <Card 
                 background={background}
+                cover={eagles}
                 heading="EAGLES WIN SUPER BOWL LVIII 4"
                 subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
                 author="Will Smith"
@@ -75,7 +83,7 @@ export default function Homepage() {
                 image={eagles}
                 credits="Photo by Corey Perrine"
                 body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
-                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                its second Super Bowl victory. /n Eagles fans celebrated the historic win by pouring into 
                 the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
                 By Monday morning, plants and street signs were uprooted and cars were flipped over as 
                 fans celebrated a win."/>
@@ -86,6 +94,7 @@ export default function Homepage() {
           content: (
             <Card 
                 background={background} 
+                cover={eagles}
                 heading="EAGLES WIN SUPER BOWL LVIII 5"
                 subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
                 author="Will Smith"
@@ -93,7 +102,7 @@ export default function Homepage() {
                 image={eagles}
                 credits="Photo by Corey Perrine"
                 body="Philadelphia Eagles fans went wild after their team made history Sunday night with 
-                its second Super Bowl victory. \n Eagles fans celebrated the historic win by pouring into 
+                its second Super Bowl victory. /n Eagles fans celebrated the historic win by pouring into 
                 the streets to cheer, cry, set off fireworks, scale street poles, and break hotel awnings. 
                 By Monday morning, plants and street signs were uprooted and cars were flipped over as 
                 fans celebrated a win."/>

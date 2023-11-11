@@ -4,22 +4,28 @@ html, body {
 }
 
 #article {
-    width: 100vw;
-    height:100vh;
-    margin: 0;
+    position: fixed; 
+    width: 90vw;
+    height: 90vh;
+    top: -48%;
+    left: -33%;
+    background-color: black;
+    margin: 20px;
+    overflow: scroll;
+    border-radius: 10px;
 }
 
 #article-heading {
-    margin-top: 0;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
     padding-top: 50px;
-    color: black;
     font-family: 'Bayon';
     font-size: 35px;
     line-height: 30px;
     font-weight: 100;
+    color: white;
 }
 
 #article-subheading {
@@ -27,7 +33,7 @@ html, body {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
-    color: black;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
     font-size: 14px;
@@ -42,12 +48,12 @@ html, body {
     align-items: center;
 }
 
-#author {
+#authorArticle {
     margin-top: 2;
     font-size: 12px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #2E4D08
+    color: coral;
 }
 
 #date {
@@ -55,12 +61,12 @@ html, body {
     margin-left: 10px;
     font-size: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 
 #image-info {
     margin-top: 0;
 }
-
 
 #image {
     margin-left: 20px;
@@ -68,14 +74,30 @@ html, body {
 
 #credits {
     margin: 0;
-    margin-right: 25px;
     font-size: 8px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: right;
+    color: white;
+    float: right;
 }
 
 #body {
     margin: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+#ex-button {
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-left: auto;
+    float: right;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
 }

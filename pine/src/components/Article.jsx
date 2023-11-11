@@ -1,32 +1,29 @@
 import "../style/Article.css"
 
-import eagles from "../images/eagles.png"
+import bookmark from "../images/bookmark2.png"
+import share from "../images/share.png"
 
-export default function Article() {
+function NewlineText(props) {
+    const text = props.text;
+    return text.split("/n").map(str => <p>{str}</p>);
+}
+
+export default function Article(props) {
     return (
         <div id="article">
-            <h1 id="article-heading"> EAGLES WIN SUPER BOWL LVIII</h1>
-            <h3 id="article-subheading"> From greasy fingers to greasier poles, here’s how 
-                Philadelphia celebrated the historic victory. 
-            </h3>
+            <button id="ex-button" onClick={() => props.setShowArticle(false)}> X </button>
+            <h1 id="article-heading"> {props.heading}</h1>
+            <h3 id="article-subheading"> {props.subheading}</h3>
             <div id="author-info">
-                <p id="author"> Will Smith </p>
-                <p id="date"> February 11, 2024</p>
+                <p id="authorArticle"> {props.author} </p>
+                <p id="date"> {props.date} </p>
             </div>
             <div id="image-info">
-                <img id="image" src={eagles} alt="Eagles fans celebrating" height="80%" width="85%"></img>
-                <p id="credits">Photo by Corey Perrine</p>
+                <img id="image" src={props.cover} height="80%" width="85%"></img>
+                <p id="credits"> {props.credits} </p>
             </div>
             <div id="body">
-                <p>
-                    Philadelphia Eagles fans went wild after their team made history Sunday night with 
-                    its second Super Bowl victory.
-                </p>
-                <p>
-                    Eagles fans celebrated the historic win by pouring into the streets to cheer, cry, set off 
-                    fireworks, scale street poles, and break hotel awnings. By Monday morning, plants and street 
-                    signs were uprooted and cars were flipped over as fans celebrated a win.
-                </p>
+                <NewlineText text={props.body} />
             </div>
         </div>
     )
