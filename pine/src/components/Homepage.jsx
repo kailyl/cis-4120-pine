@@ -117,7 +117,7 @@ export default function Homepage() {
             <div id="cards">
                 <Carousel
                     cards={cards}
-                    height="400px"
+                    height="382px"
                     width="30%"
                     margin="0 auto"
                     offset={2}

@@ -1,0 +1,58 @@
+#savedArticle {
+    width: 100%;
+    height: 160px;
+    margin-left: 0;
+    padding-left: 10%;
+    border-top: 1px solid white;
+    color: white;
+}
+
+#saved-headline {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#saved-subheading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+#headlines {
+    width: 50%;
+}
+
+#top-component {
+    display: flex;
+    margin-bottom: 0;
+}
+
+#saved-image {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#author-date-info {
+    margin-top: -20px;
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#saved-author {
+    font-family: "Bayon";
+    color: coral;
+    font-size: 13px;
+}
+
+#saved-date {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-right: 20%;
+    margin-left: auto;
+    float: right;
+}

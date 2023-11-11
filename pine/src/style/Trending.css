@@ -6,7 +6,8 @@ html, body {
 #trending {
     width: 100vw;
     height:100vh;
-    margin: 0;
+    margin: 20px;
+    color: white;
 }
 
 #trending-heading {
@@ -15,7 +16,7 @@ html, body {
     margin-right: 20px;
     margin-bottom: 0;
     padding-top: 40px;
-    color: black;
+    color: white;
     font-family: 'Bayon';
     font-size: 30px;
     line-height: 30px;
@@ -25,8 +26,9 @@ html, body {
 .trending-search-bar {
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 15px;
+    width: 78%;
     background-color: #eeeaea; /* Gray background color */
     padding: 0.5px;
     border-radius: 20px;
@@ -45,63 +47,41 @@ html, body {
   }
 
 #trending-topic {
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    color: black;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 6px;
 }
 
-
-
-
-
-#author-info {
-    margin-top: 0;
+#trending-topic-div {
     display: flex;
-    width: 100%;
+}
+
+#trending-articles {
+    margin-top: 20px;
+    margin-left: -25px;
+    height: 382px;
+    margin-bottom: -60px;
+    background-color: white;
+}
+
+#most-popular {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 40px;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+#nav-bar-style {
+    margin-left: -21px;
+}
+
+#articles-div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#author {
-    margin-top: 2;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #2E4D08
-}
-
-#date {
-    margin-top: 2;
-    margin-left: 10px;
-    font-size: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#image-info {
-    margin-top: 0;
-}
-
-
-#image {
-    margin-left: 20px;
-}
-
-#credits {
-    margin: 0;
-    margin-right: 25px;
-    font-size: 8px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: right;
-}
-
-#body {
-    margin: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
+    overflow-x: scroll;
+    margin-right: 12%;
 }

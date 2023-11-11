@@ -1,9 +1,10 @@
 import "../style/Trending.css"
 
 import NavBar from "./NavBar";
+import TrendingArticle from "./TrendingArticle";
 
-import eagles from "../images/eagles.png"
-import gfire from "../images/green-fire-icon.png"
+import fire from "../images/fire.png"
+import background from "../images/football.jpeg"
 
 export default function Trending() {
     return (
@@ -14,34 +15,48 @@ export default function Trending() {
                 <input type="text" placeholder="Search..." />
             </div>
 
-
-            {/* <div id="trending-topic"> 
-                <img id="image" src={gfire} alt="Eagles fans celebrating" height="80%" width="85%"></img>
-                <h3 Eagles win Super Bowl </h3>
-            </div> */}
-
-            <div id="image-info">
-                <img id="image" src={gfire} alt="Green fire icon" height="4%" width="4%"></img>
+            <div id="trending-topics">
+                <div id="trending-topic-div">
+                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <h3 id="trending-topic"> Taylor Swift</h3>
+                </div> 
+                <div id="trending-topic-div">
+                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <h3 id="trending-topic"> New bill passes in Congress </h3>
+                </div>
+                <div id="trending-topic-div">
+                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <h3 id="trending-topic"> Kanye runs for President </h3>
+                </div> 
+                <div id="trending-topic-div">
+                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <h3 id="trending-topic">Pete Davidson engaged again </h3>
+                </div>
+                <div id="trending-topic-div">
+                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <h3 id="trending-topic">World keeps getting hotter </h3>
+                </div>
             </div>
 
-            <h3 id="trending-topic"> Taylor Swift</h3>
-            <h3 id="trending-topic"> New bill passes in Congress</h3>
-            <h3 id="trending-topic"> Kanye runs for President</h3>
-            <h3 id="trending-topic"> Pete Davidson engaged again</h3>
-            <h3 id="trending-topic"> World keeps getting hotter</h3>
-
-
-            
-            <div id="image-info">
-                <img id="image" src={eagles} alt="Eagles fans celebrating" height="80%" width="85%"></img>
-                <p id="credits">Photo by Corey Perrine</p>
+            <div id="trending-articles">
+                <h1 id="most-popular"> Most Popular </h1>
+                <div id="articles-div">
+                    <TrendingArticle
+                        headline="Eagles Win Super Bowl LVIII"
+                        subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
+                        image={background}
+                    />
+                    <TrendingArticle
+                        headline="Eagles Win Super Bowl LVIII"
+                        subheading="From greasy fingers to greasier poles, here’s how Philadelphia celebrated the historic victory."
+                        image={background}
+                    />
+                </div>
             </div>
-            <div id="author-info">
-                <p id="author"> Will Smith </p>
-                <p id="date"> February 11, 2024</p>
-            </div>
 
-            <NavBar/> 
+            <div id="nav-bar-style">
+                <NavBar/> 
+            </div>
         </div>
     )
 }
