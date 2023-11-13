@@ -76,10 +76,6 @@ html, body {
     padding-top: 20px;
 }
 
-#nav-bar-style {
-    margin-left: -21px;
-}
-
 #articles-div {
     display: flex;
     overflow-x: scroll;

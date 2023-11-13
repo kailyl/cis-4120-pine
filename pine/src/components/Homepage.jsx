@@ -124,7 +124,7 @@ export default function Homepage() {
                     showArrows={false}
                 />
             </div>
-            <NavBar/> 
+              <NavBar/> 
         </div>
         
     );

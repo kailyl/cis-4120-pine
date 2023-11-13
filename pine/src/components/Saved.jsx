@@ -73,7 +73,7 @@ export default function Saved(props) {
                     />
                 </div>
             </div>
-            <div id="nav-bar">
+            <div id="nav-bar-style">
                 <NavBar/> 
             </div>
         </div>

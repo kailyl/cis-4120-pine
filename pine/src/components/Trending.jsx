@@ -76,9 +76,7 @@ export default function Trending(props) {
                 </div>
             </div>
 
-            <div id="nav-bar-style">
-                <NavBar/> 
-            </div>
+            <NavBar/> 
         </div>
     )
 }
