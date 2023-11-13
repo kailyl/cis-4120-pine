@@ -3,12 +3,12 @@ html, body {
     height:100%;
 }
 
-#article {
+#article-popup {
     position: fixed; 
-    width: 90vw;
-    height: 86vh;
-    top: -48%;
-    left: -33%;
+    width: 50vh;
+    height: 88vh;
+    top: 1%;
+    left: -2%;
     background-color: black;
     margin: 20px;
     overflow: scroll;
@@ -89,7 +89,7 @@ html, body {
     padding-bottom: 40px;
 }
 
-#ex-button {
+#ex-button-popup {
     border-radius: 100px;
     color: white;
     background-color: black;
