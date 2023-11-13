@@ -1,19 +1,30 @@
 import "../style/SavedArticle.css"
+import React, { useState } from "react";
+import { animated } from "react-spring";
+import ArticlePopup from "./ArticlePopup";
 
-export default function SavedArticle(props) {
+function SavedArticle(props) {
+    const [showArticle, setShowArticle] = useState(false);
+
     return (
-        <div id="savedArticle">
-            <div id="top-component">
-                <div id="headlines">
-                    <h1 id="saved-headline">{props.headline}</h1>
-                    <p id="saved-subheading">{props.subheading}</p>
+        <div id="savedArticle" onClick={() => !showArticle ? setShowArticle(true) : null}>
+            <animated.div>
+                <div id="top-component">
+                    <div id="headlines">
+                        <h1 id="saved-headline">{props.heading}</h1>
+                        <p id="saved-subheading">{props.subheading}</p>
+                    </div>
+                    <img src={props.image} id="saved-image"/>
                 </div>
-                <img src={props.image} id="saved-image"/>
-            </div>
-            <div id="author-date-info">
-                <p id="saved-author">{props.author}</p>
-                <p id="saved-date">{props.date}</p>
-            </div>
+                <div id="author-date-info">
+                    <p id="saved-author">{props.author}</p>
+                    <p id="saved-date">{props.date}</p>
+                </div>
+            </animated.div>
+            {showArticle ? 
+            <ArticlePopup {...props} setShowArticle={setShowArticle}/> : 
+            <div/>}
         </div>
     )
 }
+export default SavedArticle;
