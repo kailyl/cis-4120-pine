@@ -1,0 +1,91 @@
+html, body {
+    margin:0px;
+    height:100%;
+}
+
+#profile {
+    width: 100vw;
+    height:100vh;
+    margin: 20px;
+    color: white;
+}
+
+#profile-heading {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-top: 40px;
+    color: white;
+    font-family: 'Bayon';
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+#profile-image {
+    margin-left: -20px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#profile-name {
+    margin-top: 5px;
+    margin-left: -50px;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 2;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#profile-email {
+    margin-top: -10px;
+    margin-left: -50px;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 2;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#profile-subheading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 0;
+    max-width: 84%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.profile-search-bar {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 78%;
+    background-color: #eeeaea; /* Gray background color */
+    padding: 0.5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+.profile-search-bar input {
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    font-size: 10px;
+  }
