@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import Dropdown from "./Dropdown";
 import TagList from './TagList';
 
-import cover from "../images/football.jpeg"
+import cover from "../images/cover-art.jpeg"
 
 export default function Profile() {
     return (

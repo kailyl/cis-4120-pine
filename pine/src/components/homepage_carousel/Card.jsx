@@ -19,7 +19,7 @@ function Card(props) {
   return (
     <div>
       <animated.div
-        class="card"
+        className="card"
         style={props3}
         onMouseEnter={() => setShown(true)}
         onMouseLeave={() => setShown(false)}
