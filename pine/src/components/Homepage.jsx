@@ -1,5 +1,7 @@
 import "../style/Homepage.css"
+import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+
 import Card from "./homepage_carousel/Card";
 import Carousel from "./homepage_carousel/Carousel";
 import NavBar from "./NavBar";
@@ -14,6 +16,8 @@ import card5 from "../images/pitbull.jpeg"
 
 
 export default function Homepage() {
+    const [bookmarked, setBookmarked] = useState(false);
+
     let cards = [
         {
             key: uuidv4(),
@@ -130,13 +134,17 @@ export default function Homepage() {
             <div id="cards">
                 <Carousel
                     cards={cards}
-                    height="382px"
+                    height="370px"
                     width="30%"
                     margin="0 auto"
                     offset={2}
                     showArrows={false}
                 />
             </div>
+            <button 
+                id={bookmarked ? "savedBtn" : "saveBtn"}
+                onClick={() => setBookmarked(!bookmarked)}
+            > Save Article </button>
               <NavBar/> 
         </div>
         

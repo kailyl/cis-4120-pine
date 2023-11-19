@@ -28,12 +28,12 @@ function Card(props) {
         onMouseEnter={() => setShown(true)}
         onMouseLeave={() => setShown(false)}
        >
-        <img className="bookmarkBtn" 
+        {/* <img className="bookmarkBtn" 
                 src={bookmarked && show ? bookmarked_img : not_bookmarked} 
                 height="10%" 
                 width="10%"
                 onClick={() => setBookmarked(!bookmarked)}
-        ></img>
+        ></img> */}
         <div
           onClick={() => show ? setShowArticle(true) : setShowArticle(false)}>
           <h2 className="heading">{props.heading}</h2>
