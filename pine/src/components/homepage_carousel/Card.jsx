@@ -3,9 +3,13 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Article from "../Article";
 
+import bookmarked_img from "../../images/bookmarked.png"
+import not_bookmarked from "../../images/not-bookmarked.png"
+
 function Card(props) {
   const [show, setShown] = useState(false);
   const [showArticle, setShowArticle] = useState(false);
+  const [bookmarked, setBookmarked] = useState(false);
 
   const props3 = useSpring({
     transform: show ? "scale(1.03)" : "scale(1)",
@@ -24,6 +28,12 @@ function Card(props) {
         onMouseEnter={() => setShown(true)}
         onMouseLeave={() => setShown(false)}
        >
+        <img className="bookmarkBtn" 
+                src={bookmarked && show ? bookmarked_img : not_bookmarked} 
+                height="10%" 
+                width="10%"
+                onClick={() => setBookmarked(!bookmarked)}
+        ></img>
         <div
           onClick={() => show ? setShowArticle(true) : setShowArticle(false)}>
           <h2 className="heading">{props.heading}</h2>
