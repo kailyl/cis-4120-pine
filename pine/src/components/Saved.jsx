@@ -1,6 +1,8 @@
 import "../style/Saved.css"
 import NavBar from "./NavBar";
 import SavedArticle from "./SavedArticle";
+import SavedScroll from "./SavedScroll";
+import DropdownSaved from "./DropdownSaved";
 
 import card1 from "../images/football.jpeg"
 import card1b from "../images/img.jpeg"
@@ -9,10 +11,12 @@ import card3 from "../images/kanye-west.webp"
 import card5 from "../images/pitbull.jpeg"
 
 
-export default function Saved(props) {
+export default function Saved() {
     return (
         <div>                
             <h1 id="saved-heading"> SAVED ARTICLES</h1>
+            <SavedScroll/>
+            <DropdownSaved/>
             <div id="saved">
                 <div id="saved-articles">
                     <SavedArticle

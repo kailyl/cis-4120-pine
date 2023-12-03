@@ -1,6 +1,7 @@
 html, body {
     margin:0px;
     height:100%;
+    overflow-x: hidden;
 }
 
 #article-popup {
@@ -8,11 +9,20 @@ html, body {
     width: 50vh;
     height: 88vh;
     top: 1%;
-    left: -2%;
-    background-color: black;
+    left: -5%;
+    background-color: white;
     margin: 20px;
-    overflow: scroll;
-    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+#parent {
+    position: fixed; 
+    width: 50vh;
+    height: 40.5vh;
+    background-color: white;
+    z-index: 9;
 }
 
 #article-heading {
@@ -22,10 +32,11 @@ html, body {
     margin-bottom: 0;
     padding-top: 50px;
     font-family: 'Bayon';
-    font-size: 35px;
-    line-height: 30px;
+    font-size: 45px;
+    line-height: 35px;
     font-weight: 100;
-    color: white;
+    color: black;
+    width: 90%;
 }
 
 #article-subheading {
@@ -33,10 +44,11 @@ html, body {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
-    color: white;
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
     font-size: 14px;
+    width: 90%;
 }
 
 #author-info {
@@ -49,19 +61,19 @@ html, body {
 }
 
 #authorArticle {
-    margin-top: 2;
+    margin-top: 12px;
     font-size: 12px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: coral;
+    color: #2E4D08;
 }
 
 #date {
-    margin-top: 2;
-    margin-left: 10px;
+    margin-top: 9.18px;
+    margin-left: 8px;
     font-size: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: black;
 }
 
 #image-info {
@@ -70,6 +82,8 @@ html, body {
 
 #image {
     margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 3px;
 }
 
 #credits {
@@ -78,7 +92,7 @@ html, body {
     font-size: 8px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: right;
-    color: white;
+    color: black;
     float: right;
 }
 
@@ -86,16 +100,16 @@ html, body {
     margin: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
-    color: white;
+    color: black;
     padding-bottom: 40px;
 }
 
 #ex-button-popup {
     border-radius: 100px;
-    color: white;
-    background-color: black;
-    border: 1px solid black;
-    margin-right: 20px;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    margin-right: 25px;
     margin-left: auto;
     float: right;
     font-size: 20px;

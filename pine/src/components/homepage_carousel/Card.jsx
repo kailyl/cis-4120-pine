@@ -11,6 +11,11 @@ function Card(props) {
   const [showArticle, setShowArticle] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
 
+  const setBookmarkedAndSaved = (bookmarked) => {
+    setBookmarked(bookmarked)
+    props.setSaved(bookmarked)
+  }
+
   const props3 = useSpring({
     transform: show ? "scale(1.03)" : "scale(1)",
     boxShadow: "0 0px 50px rgb(255 255 255 / 40%)",
@@ -28,12 +33,12 @@ function Card(props) {
         onMouseEnter={() => setShown(true)}
         onMouseLeave={() => setShown(false)}
        >
-        {/* <img className="bookmarkBtn" 
+        <img className="bookmarkBtn" 
                 src={bookmarked && show ? bookmarked_img : not_bookmarked} 
                 height="10%" 
                 width="10%"
-                onClick={() => setBookmarked(!bookmarked)}
-        ></img> */}
+                onClick={() => setBookmarkedAndSaved(!bookmarked)}
+        ></img>
         <div
           onClick={() => show ? setShowArticle(true) : setShowArticle(false)}>
           <h2 className="heading">{props.heading}</h2>
@@ -41,7 +46,7 @@ function Card(props) {
         </div>
       </animated.div>
       {showArticle ? 
-      <Article {...props} setShowArticle={setShowArticle}/> : 
+      <Article {...props} setShowArticle={setShowArticle} articleShown={showArticle}/> : 
       <div/>}
     </div>
   );

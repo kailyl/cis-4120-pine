@@ -1,13 +1,28 @@
 import "../style/NavBar.css";
 
+import { useEffect, useState } from "react";
+
 import home from "../images/navbar-buttons/icon-inv.jpg";
 import search from "../images/navbar-buttons/search.png";
 import profile from "../images/navbar-buttons/person.png";
 import bookmark from "../images/navbar-buttons/bookmark.png";
 
-export default function NavBar() {
+export default function NavBar(props) {
+    const [savedBounce, setSavedBounce] = useState(false)
+
+    useEffect(() => {
+        if (props && props.savedArticle) {
+            setSavedBounce(true);
+
+            const timeoutId = setTimeout(() => {
+                setSavedBounce(false)
+            }, 1000)
+
+            return () => clearTimeout(timeoutId)
+        }
+    }, [props])
+
     const navigateTo = (path) => {
-        console.log(path)
         window.location.href = path;
     };
 
@@ -39,7 +54,7 @@ export default function NavBar() {
                     &nbsp;
             </button>
             <button
-                className="navButton"
+                className={savedBounce ? "bouncingButton" : "navButton"}
                 style={{
                     backgroundImage: `url(${bookmark})`, 
                     backgroundColor: "black",

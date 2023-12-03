@@ -7,16 +7,16 @@ html, body {
     width: 100vw;
     height:100vh;
     margin: 20px;
-    color: white;
+    margin-top: 10px;
+    color: black;
 }
 
 #trending-heading {
     margin-top: 0;
-    margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
     padding-top: 40px;
-    color: white;
+    color: black;
     font-family: 'Bayon';
     font-size: 30px;
     line-height: 30px;
@@ -24,7 +24,6 @@ html, body {
 }
 
 .trending-search-bar {
-    margin-left: 20px;
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -47,37 +46,40 @@ html, body {
   }
 
 #trending-topic {
-    color: white;
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 14px;
     margin-left: 5px;
-    margin-top: 0px;
+    margin-top: 2.5px;
     margin-bottom: 6px;
 }
 
 #trending-topic-div {
     display: flex;
+    margin-left: -20px;
 }
 
 #trending-articles {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: -25px;
     height: 382px;
     margin-bottom: -60px;
-    background-color: white;
+    background-color: black;
 }
 
 #most-popular {
-    color: black;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 40px;
+    margin-left: 30px;
     font-size: 22px;
     padding-top: 20px;
 }
 
 #articles-div {
+    background-color: black;
     display: flex;
+    width: 100%;
     overflow-x: scroll;
     margin-right: 12%;
 }

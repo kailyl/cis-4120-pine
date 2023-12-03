@@ -1,12 +1,12 @@
 #trending-headline {
-    color: black;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 1px;
 }
 
 #trending-subheading {
-    color: black;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
     margin-top: 0px;

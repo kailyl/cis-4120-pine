@@ -1,33 +1,40 @@
 import React, { useState } from 'react';
 import "../style/Dropdown.css"
-import add from "../images/add-button.png"
 
-const Dropdown = () => {
-  const [selectedOption, setSelectedOption] = useState('');
-  const options = ['ASSOCIATED PRESS (AP)', 'FOX NEWS', 'NEW YORK TIMES'];
+export default function Dropdown() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [selectedItem, setSelectedItem] = useState("Fox News");
 
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
 
-  const handleButtonClick = () => {
-    console.log('Selected Option:', selectedOption);
-  };
+    const handleItemClick = (item) => {
+        setSelectedItem(item);
+        setIsOpen(false);
+    };
 
-  return (
-    <div className = "dropdown-container">
-      <select value={selectedOption} onChange={handleOptionChange}>
-        <option value="">Select an option</option>
-        {options.map((option, index) => (
-          <option key={index} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
-      <div>
-        <button id="dropdown-button" onClick={handleButtonClick}>ADD</button>
+    return (
+        <div className="dropdown-container-2">
+          <div id="sort-by-2">
+            <button className="dropdown-button-2" onClick={toggleDropdown}>
+              <span className="dropdown-text-2">{selectedItem ? selectedItem : ''}</span>
+              <i className={`fas ${isOpen ? 'fa-caret-up' : 'fa-caret-down'} icon-right`}></i>
+            </button>
+          </div>
+          {isOpen && (
+            <div id="dropdown-content-2">
+              <a href="#" onClick={() => handleItemClick('Fox News')}>Fox News</a>
+              <a href="#" onClick={() => handleItemClick('MSNBC')}>MSNBC</a>
+              <a href="#" onClick={() => handleItemClick('Breitbart')}>Breitbart</a>
+              <a href="#" onClick={() => handleItemClick('The Huffington Post')}>The Huffington Post</a>
+              <a href="#" onClick={() => handleItemClick('Russia Today')}>Russia Today</a>
+              <a href="#" onClick={() => handleItemClick('Al Jazeera')}>Al Jazeera</a>
+              <a href="#" onClick={() => handleItemClick('CNN')}>CNN</a>
+              <a href="#" onClick={() => handleItemClick('Daily Mail')}>Daily Mail</a>
+              <a href="#" onClick={() => handleItemClick('Info Wars')}>Info Wars</a>
+            </div> 
+          )}
       </div>
-    </div>
-  );
+    );
 };
-export default Dropdown;

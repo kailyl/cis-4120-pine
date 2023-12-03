@@ -2,7 +2,7 @@ import "../style/Trending.css"
 import NavBar from "./NavBar";
 import TrendingArticle from "./TrendingArticle";
 
-import fire from "../images/fire.png"
+import fire from "../images/icons8-fire-30.png"
 import trending1 from "../images/football.jpeg"
 import trending2 from "../images/taylor-swift.webp"
 import eagles from "../images/img.jpeg"
@@ -18,23 +18,23 @@ export default function Trending(props) {
 
             <div id="trending-topics">
                 <div id="trending-topic-div">
-                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
                     <h3 id="trending-topic"> Taylor Swift</h3>
                 </div> 
                 <div id="trending-topic-div">
-                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
                     <h3 id="trending-topic"> New bill passes in Congress </h3>
                 </div>
                 <div id="trending-topic-div">
-                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
                     <h3 id="trending-topic"> Kanye runs for President </h3>
                 </div> 
                 <div id="trending-topic-div">
-                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
                     <h3 id="trending-topic">Pete Davidson engaged again </h3>
                 </div>
                 <div id="trending-topic-div">
-                    <img id="image" src={fire} height="4%" width="4%"></img>
+                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
                     <h3 id="trending-topic">World keeps getting hotter </h3>
                 </div>
             </div>

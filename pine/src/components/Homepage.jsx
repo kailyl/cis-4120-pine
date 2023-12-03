@@ -16,13 +16,18 @@ import card5 from "../images/pitbull.jpeg"
 
 
 export default function Homepage() {
-    const [bookmarked, setBookmarked] = useState(false);
+    const [saved, setSaved] = useState(false);
+
+    const handleSave = (bookmarked) => {
+        setSaved(bookmarked)
+    }
 
     let cards = [
         {
             key: uuidv4(),
             content: (
             <Card 
+                setSaved={handleSave}
                 background={card1} 
                 cover={card1b}
                 heading="EAGLES WIN SUPER BOWL LVIII"
@@ -46,6 +51,7 @@ export default function Homepage() {
           key: uuidv4(),
           content: (
             <Card 
+                setSaved={handleSave}
                 background={card2} 
                 cover={card2}
                 heading="How Does Football Work?"
@@ -68,13 +74,14 @@ export default function Homepage() {
           key: uuidv4(),
           content: (
             <Card 
-                background={card3b} 
-                cover={card3}
+                setSaved={handleSave}
+                background={card1} 
+                cover={card1}
                 heading="What Does Kanye 2024 Look Like?"
                 subheading="A glimpse of the American rapper and singer-songwriter's campaign trail."
                   author="Kim Kardashian"
                 date="February 8, 2024"
-                image={card3}
+                image={card1}
                 credits="Photo by Winston Cook"
                 body="Kanye West is hitting the campaign trail. /n Exactly two weeks after announcing his unlikely 
                 bid for president, the rapper announced late Saturday he will be holding the first event of his 
@@ -88,13 +95,14 @@ export default function Homepage() {
           key: uuidv4(),
           content: (
             <Card 
-                background={card4} 
-                cover={card4}
+                setSaved={handleSave}
+                background={card1} 
+                cover={card1}
                 heading="How “Nepo Babies” are pushing back"
                 subheading="Actress Lily Rose Depp on her experiences growing up in the public eye."
                   author="Anna Wintour"
                 date="February 6, 2024"
-                image={card4}
+                image={card1}
                 credits="Photo by Dimitrios Kambouris"
                 body="Lily-Rose Depp grew up in the public eye, but she's still somewhat uncomfortable with the 
                 concept of fame. /n The 23-year-old is the daughter of Johnny Depp and Vanessa Paradis, and she's 
@@ -109,13 +117,14 @@ export default function Homepage() {
           key: uuidv4(),
           content: (
             <Card 
-                background={card5} 
-                cover={card5}
+                setSaved={handleSave}
+                background={card1} 
+                cover={card1}
                 heading="A Conversation With Pitbull"
                 subheading="“Now make dollars, I mean billions. I’m a genius, I mean brilliant.”"
                 author="Benito Antonio Martínez Ocasio"
                 date="February 5, 2024"
-                image={card5}
+                image={card1}
                 credits="Photo by Scott Legato"
                 body="Pitbull has recorded hundreds of songs and has sold more than 70 million singles, with 
                 No. 1 hits in more than 15 countries. /n He’s had more than 67 million digital downloads, more 
@@ -141,11 +150,7 @@ export default function Homepage() {
                     showArrows={false}
                 />
             </div>
-            <button 
-                id={bookmarked ? "savedBtn" : "saveBtn"}
-                onClick={() => setBookmarked(!bookmarked)}
-            > Save Article </button>
-              <NavBar/> 
+            <NavBar savedArticle={saved} /> 
         </div>
         
     );

@@ -5,14 +5,26 @@ html, body {
 
 #article {
     position: fixed; 
-    width: 90vw;
-    height: 86vh;
+    width: 103vw;
+    height: 88vh;
     top: -48%;
-    left: -33%;
-    background-color: black;
+    left: -25%;
+    background-color: white;
     margin: 20px;
     overflow: scroll;
-    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    z-index: 5;
+    overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #article-heading {
@@ -22,7 +34,7 @@ html, body {
     margin-bottom: 0;
     padding-top: 50px;
     font-family: 'Bayon';
-    font-size: 35px;
+    font-size: 45px;
     line-height: 30px;
     font-weight: 100;
     color: white;
@@ -33,6 +45,7 @@ html, body {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
+    width: 70%;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
@@ -52,8 +65,8 @@ html, body {
     margin-top: 2;
     font-size: 12px;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: coral;
+    font-family: 'Bayon';
+    color: #2E4D08;
 }
 
 #date {
@@ -91,10 +104,10 @@ html, body {
 
 #ex-button {
     border-radius: 100px;
-    color: white;
-    background-color: black;
-    border: 1px solid black;
-    margin-right: 20px;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    margin-right: 25px;
     margin-left: auto;
     float: right;
     font-size: 20px;
