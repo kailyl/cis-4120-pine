@@ -15,6 +15,7 @@ html, body {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
     z-index: 5;
+    padding-left: 5px;
     overflow-x: hidden;
 }
 
@@ -102,15 +103,33 @@ html, body {
     padding-bottom: 40px;
 }
 
-#ex-button {
-    border-radius: 100px;
-    color: black;
-    background-color: white;
-    border: 1px solid white;
-    margin-right: 25px;
-    margin-left: auto;
+#article-top-nav {
+    position: fixed;
+    top: -190px;
+    left: -50px;
+    right: 0;
+    width: 110vw;
+    height: 70px;
+    background-color: white; 
+}
+
+#save-button {
+    margin-right: 10px;
     float: right;
+    font-size: 15px;
+    margin-top: 43px;
+}
+
+#ellipses-button {
+    margin-right: 30px;
+    float: right;
+    font-size: 14px;
+    margin-top: 42px;
+}
+
+#ex-button {
+    margin-left: 30px;
+    float: left;
     font-size: 20px;
-    font-weight: bolder;
-    margin-top: 20px;
+    margin-top: 42px;
 }

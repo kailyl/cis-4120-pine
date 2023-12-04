@@ -72,18 +72,13 @@ html, body {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: 30px;
-    font-size: 22px;
+    font-size: 20px;
     padding-top: 20px;
 }
 
 #articles-div {
     background-color: black;
     display: flex;
-    width: 100%;
+    width: 85%;
     overflow-x: scroll;
-    margin-right: 12%;
-}
-
-#nav-bar-style {
-    margin-right: -40px;
 }

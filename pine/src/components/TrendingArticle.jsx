@@ -9,12 +9,12 @@ function TrendingArticle(props) {
     return (
     <div id="trendingArticle" onClick={() => !showArticle ? setShowArticle(true) : null}>
         <animated.div>
-            <img src={props.image} id="trending-image"/>
+            <img src={props.cover} id="trending-image"/>
             <h1 id="trending-headline">{props.heading}</h1>
             <p id="trending-subheading">{props.subheading}</p>
         </animated.div>
         {showArticle ? 
-            <ArticlePopup {...props} setShowArticle={setShowArticle}/> : 
+            <ArticlePopup {...props} setShowArticle={setShowArticle} setSaved={props.setSaved}/> : 
         <div/>}
     </div>
     )

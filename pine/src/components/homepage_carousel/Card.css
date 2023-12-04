@@ -24,11 +24,13 @@
   margin-bottom: 1.5rem;
   font-size: 13px;
   color: white;
+  font-weight: 300;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .bookmarkBtn {
-  margin-left: 92%;
-  margin-top: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 

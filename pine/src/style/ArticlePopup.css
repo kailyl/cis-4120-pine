@@ -7,11 +7,12 @@ html, body {
 #article-popup {
     position: fixed; 
     width: 50vh;
-    height: 88vh;
+    height: 89vh;
     top: 1%;
-    left: -5%;
+    left: -7%;
     background-color: white;
     margin: 20px;
+    margin-right: 80px;
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: 10;
@@ -104,15 +105,33 @@ html, body {
     padding-bottom: 40px;
 }
 
-#ex-button-popup {
-    border-radius: 100px;
-    color: black;
-    background-color: white;
-    border: 1px solid white;
-    margin-right: 25px;
-    margin-left: auto;
+#article-top-nav-2 {
+    position: fixed;
+    top: 0px;
+    left: -50px;
+    right: 0;
+    width: 110vw;
+    height: 70px;
+    background-color: white; 
+}
+
+#save-button-2 {
+    margin-right: 10px;
     float: right;
+    font-size: 15px;
+    margin-top: 43px;
+}
+
+#ellipses-button-2 {
+    margin-right: 0px;
+    float: right;
+    font-size: 14px;
+    margin-top: 42px;
+}
+
+#ex-button-2 {
+    margin-left: 62px;
+    float: left;
     font-size: 20px;
-    font-weight: bolder;
-    margin-top: 20px;
+    margin-top: 42px;
 }

@@ -1,5 +1,5 @@
 import "./Card.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import Article from "../Article";
 
@@ -11,7 +11,37 @@ function Card(props) {
   const [showArticle, setShowArticle] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
 
+  useEffect(() => {
+    const savedArticles = localStorage.getItem('savedArticles');
+    if (savedArticles) {
+      let saved = JSON.parse(savedArticles)
+      if (saved.indexOf(props.heading) > -1) {
+        setBookmarked(true)
+      }
+    }
+  }, []);
+
   const setBookmarkedAndSaved = (bookmarked) => {
+    const savedArticles = localStorage.getItem('savedArticles');
+    if (savedArticles) {
+      let saved = JSON.parse(savedArticles)
+      if (bookmarked) {
+        if (!(saved.includes(props.heading))) {
+          saved.push(props.heading)
+        }
+      } else {
+        let index = saved.indexOf(props.heading);
+        if (index !== -1) {
+          saved.splice(index, 1)
+        }
+      }
+      localStorage.setItem('savedArticles', JSON.stringify(saved))
+    } else {
+      if (bookmarked) {
+        let saved = [props.heading]
+        localStorage.setItem('savedArticles', JSON.stringify(saved))
+      }
+    }
     setBookmarked(bookmarked)
     props.setSaved(bookmarked)
   }
@@ -24,7 +54,7 @@ function Card(props) {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
   });
-
+  
   return (
     <div>
       <animated.div
@@ -34,7 +64,7 @@ function Card(props) {
         onMouseLeave={() => setShown(false)}
        >
         <img className="bookmarkBtn" 
-                src={bookmarked && show ? bookmarked_img : not_bookmarked} 
+                src={bookmarked ? bookmarked_img : not_bookmarked} 
                 height="10%" 
                 width="10%"
                 onClick={() => setBookmarkedAndSaved(!bookmarked)}
@@ -46,7 +76,7 @@ function Card(props) {
         </div>
       </animated.div>
       {showArticle ? 
-      <Article {...props} setShowArticle={setShowArticle} articleShown={showArticle}/> : 
+      <Article {...props} setShowArticle={setShowArticle} articleShown={showArticle} setBookmarkedAndSaved={setBookmarkedAndSaved} bookmarked={bookmarked}/> : 
       <div/>}
     </div>
   );
