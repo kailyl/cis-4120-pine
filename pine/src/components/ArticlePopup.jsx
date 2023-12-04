@@ -49,7 +49,7 @@ export default function ArticlePopup(props) {
                         <i className={bookmarked ? "fas fa-bookmark" : "far fa-bookmark"}></i>
                     </button>
                 </div>
-                <h1 id="article-heading"> {props.heading}</h1>
+                <h1 id="article-heading-2"> {props.heading}</h1>
                 <h3 id="article-subheading"> {props.subheading}</h3>
                 <div id="author-info">
                     <p id="authorArticle"> {props.author} </p>

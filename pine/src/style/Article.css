@@ -5,10 +5,10 @@ html, body {
 
 #article {
     position: fixed; 
-    width: 103vw;
+    width: 105vw;
     height: 88vh;
     top: -48%;
-    left: -25%;
+    left: -30%;
     background-color: #f5f5f5;
     margin: 20px;
     overflow: scroll;
@@ -29,16 +29,16 @@ html, body {
 }
 
 #article-heading {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
-    padding-top: 50px;
     font-family: 'Bayon';
     font-size: 45px;
-    line-height: 30px;
+    line-height: 35px;
     font-weight: 100;
-    color: #f5f5f5;
+    color: black;
+    width: 90%;
 }
 
 #article-subheading {
@@ -105,10 +105,10 @@ html, body {
 
 #article-top-nav {
     position: fixed;
-    top: -190px;
-    left: -50px;
+    top: -210px;
+    left: -60px;
     right: 0;
-    width: 110vw;
+    width: 115vw;
     height: 70px;
     background-color: #f5f5f5; 
 }
@@ -121,7 +121,7 @@ html, body {
 }
 
 #ellipses-button {
-    margin-right: 30px;
+    margin-right: 35px;
     float: right;
     font-size: 14px;
     margin-top: 42px;
