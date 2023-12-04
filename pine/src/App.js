@@ -10,6 +10,7 @@ import Trending from "./components/Trending.jsx";
 import Profile from "./components/Profile.jsx"; 
 import Saved from "./components/Saved.jsx"; 
 import ScrollToTop from './components/ScrollToTop';
+import Search from './components/Search.jsx';
 
 import './App.css';
 
@@ -29,6 +30,8 @@ function App() {
 						element={<Profile />} />
 					<Route exact path="/saved"
 						element={<Saved />} />
+					<Route exact path="/search"
+						element={<Search />} />
  				</Routes>
 			</Router>
 		</>

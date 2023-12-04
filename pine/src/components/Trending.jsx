@@ -1,5 +1,6 @@
 import "../style/Trending.css"
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import TrendingArticle from "./TrendingArticle";
 import jsonData from '../data/trending-articles.json';
@@ -10,6 +11,12 @@ export default function Trending() {
     const [jsonDataState, setJsonDataState] = useState(null);
     const [trending, setTrending] = useState([]);
     const [saved, setSaved] = useState(false);
+
+    const [searchQuery, setSearchQuery] = useState("");
+
+    const handleSearchChange = (event) => {
+        setSearchQuery(event.target.value);
+    };
 
     const handleSave = (bookmarked) => {
         setSaved(bookmarked)
@@ -46,9 +53,16 @@ export default function Trending() {
 
             <div id="search-component">
                 <div className="trending-search-bar">
-                    <input type="text" placeholder="Search..." />
+                    <input 
+                        type="text" 
+                        placeholder="Search..." 
+                        value={searchQuery}
+                        onChange={handleSearchChange}
+                    />
                 </div>
-                <button id="search-btn"> SEARCH </button>
+                <Link to={`/search?q=${searchQuery}`}>
+                    <button id="search-btn"> SEARCH </button>
+                </Link>
             </div>
             
             <div id="trending-topics">
