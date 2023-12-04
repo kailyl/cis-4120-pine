@@ -14,7 +14,7 @@ function SavedArticle(props) {
                         <h1 id="saved-headline">{props.heading}</h1>
                         <p id="saved-subheading">{props.subheading}</p>
                     </div>
-                    <img src={props.image} id="saved-image"/>
+                    <img src={props.cover} id="saved-image"/>
                 </div>
                 <div id="author-date-info">
                     <p id="saved-author">{props.author}</p>
@@ -22,7 +22,7 @@ function SavedArticle(props) {
                 </div>
             </animated.div>
             {showArticle ? 
-            <ArticlePopup {...props} setShowArticle={setShowArticle}/> : 
+            <ArticlePopup {...props} setShowArticle={setShowArticle} setSaved={props.setSaved}/> : 
             <div/>}
         </div>
     )

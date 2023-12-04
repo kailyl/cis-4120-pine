@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../style/DropdownSaved.css"
 
-export default function DropdownSaved() {
+export default function DropdownSaved(props) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
 
@@ -11,6 +11,7 @@ export default function DropdownSaved() {
 
     const handleItemClick = (item) => {
         setSelectedItem(item);
+        props.setSort(item);
         setIsOpen(false);
     };
 
@@ -25,10 +26,11 @@ export default function DropdownSaved() {
             </div>
             {isOpen && (
                 <div className="dropdown-content">
-                <a href="#" onClick={() => handleItemClick('Date')}>Date</a>
-                <a href="#" onClick={() => handleItemClick('Title')}>Title</a>
-                <a href="#" onClick={() => handleItemClick('Author')}>Author</a>
-                <a href="#" onClick={() => handleItemClick('Popularity')}>Popularity</a>
+                    <a href="#" onClick={() => handleItemClick('')}> - </a>
+                    <a href="#" onClick={() => handleItemClick('Date')}>Date</a>
+                    <a href="#" onClick={() => handleItemClick('Title')}>Title</a>
+                    <a href="#" onClick={() => handleItemClick('Author')}>Author</a>
+                    <a href="#" onClick={() => handleItemClick('Popularity')}>Popularity</a>
                 </div>
             )}
         </div>

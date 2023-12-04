@@ -36,7 +36,6 @@ export default function Trending() {
                     />
                 )
             })
-
             setTrending(newArticles);
         }
     }, [jsonDataState])
