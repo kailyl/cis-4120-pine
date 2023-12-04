@@ -64,3 +64,8 @@ html, body {
     text-align: center;
     margin-top: 4.8px;
 }
+
+#no-results {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}

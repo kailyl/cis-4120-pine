@@ -21,3 +21,11 @@
 #nav-bar-style {
     margin-left: 0px;
 }
+
+#search-results {
+    margin-left: -40px;
+    margin-top: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 480px;
+}

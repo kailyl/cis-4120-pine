@@ -15,8 +15,6 @@ export default function Saved() {
     const [category, setCategory] = useState(null);
     const [sort, setSort] = useState(null);
 
-    console.log(sort)
-
     const handleSave = (bookmarked) => {
         setSaved(bookmarked)
     }

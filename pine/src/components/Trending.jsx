@@ -66,26 +66,36 @@ export default function Trending() {
             </div>
             
             <div id="trending-topics">
-                <div id="trending-topic-div">
-                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
-                    <h3 id="trending-topic"> Taylor Swift</h3>
-                </div> 
-                <div id="trending-topic-div">
-                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
-                    <h3 id="trending-topic"> New bill passes in Congress </h3>
-                </div>
-                <div id="trending-topic-div">
-                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
-                    <h3 id="trending-topic"> Kanye runs for President </h3>
-                </div> 
-                <div id="trending-topic-div">
-                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
-                    <h3 id="trending-topic">Pete Davidson engaged again </h3>
-                </div>
-                <div id="trending-topic-div">
-                    <img id="image" src={fire} height="3.5%" width="3.5%"></img>
-                    <h3 id="trending-topic">World keeps getting hotter </h3>
-                </div>
+                <Link to="/search?q=Taylor Swift">
+                    <div id="trending-topic-div">
+                        <img id="image" src={fire} height="3.5%" width="3.5%"></img>
+                        <h3 id="trending-topic"> Taylor Swift</h3>
+                    </div>
+                </Link>
+                <Link to="/search?q=New bill passes in Congress">
+                    <div id="trending-topic-div">
+                        <img id="image" src={fire} height="3.5%" width="3.5%"></img>
+                        <h3 id="trending-topic"> New bill passes in Congress </h3>
+                    </div>
+                </Link>
+                <Link to="/search?q=Kanye runs for President">
+                    <div id="trending-topic-div">
+                        <img id="image" src={fire} height="3.5%" width="3.5%"></img>
+                        <h3 id="trending-topic"> Kanye runs for President </h3>
+                    </div>
+                </Link>
+                <Link to="/search?q=Pete Davidson engaged again">
+                    <div id="trending-topic-div">
+                        <img id="image" src={fire} height="3.5%" width="3.5%"></img>
+                        <h3 id="trending-topic"> Pete Davidson engaged again </h3>
+                    </div>
+                </Link>
+                <Link to="/search?q=World keeps getting hotter">
+                    <div id="trending-topic-div">
+                        <img id="image" src={fire} height="3.5%" width="3.5%"></img>
+                        <h3 id="trending-topic"> World keeps getting hotter </h3>
+                    </div>
+                </Link>
             </div>
 
             <div id="trending-articles">
