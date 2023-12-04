@@ -10,7 +10,7 @@ html, body {
     height: 89vh;
     top: 1%;
     left: -7%;
-    background-color: white;
+    background-color: #f5f5f5;
     margin: 20px;
     margin-right: 80px;
     overflow-y: scroll;
@@ -22,7 +22,7 @@ html, body {
     position: fixed; 
     width: 50vh;
     height: 40.5vh;
-    background-color: white;
+    background-color: #f5f5f5;
     z-index: 9;
 }
 
@@ -112,7 +112,7 @@ html, body {
     right: 0;
     width: 110vw;
     height: 70px;
-    background-color: white; 
+    background-color: #f5f5f5; 
 }
 
 #save-button-2 {

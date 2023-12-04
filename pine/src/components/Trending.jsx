@@ -44,10 +44,13 @@ export default function Trending() {
         <div id="trending">
             <h1 id="trending-heading"> TRENDING</h1>
 
-            <div className="trending-search-bar">
-                <input type="text" placeholder="Search..." />
+            <div id="search-component">
+                <div className="trending-search-bar">
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <button id="search-btn"> SEARCH </button>
             </div>
-
+            
             <div id="trending-topics">
                 <div id="trending-topic-div">
                     <img id="image" src={fire} height="3.5%" width="3.5%"></img>

@@ -48,7 +48,7 @@ function Card(props) {
 
   const props3 = useSpring({
     transform: show ? "scale(1.03)" : "scale(1)",
-    boxShadow: "0 0px 50px rgb(255 255 255 / 40%)",
+    boxShadow: "2px 7px 10px rgba(0, 0, 0, 0.4)",
     backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))," + `url(${props.background})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',

@@ -55,7 +55,7 @@ export default function Homepage() {
                 <div id="cards">
                     <Carousel
                         cards={cards}
-                        height="370px"
+                        height="330px"
                         width="30%"
                         margin="0 auto"
                         offset={2}

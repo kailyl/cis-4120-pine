@@ -9,7 +9,7 @@ html, body {
     height: 88vh;
     top: -48%;
     left: -25%;
-    background-color: white;
+    background-color: #f5f5f5;
     margin: 20px;
     overflow: scroll;
     opacity: 0;
@@ -38,7 +38,7 @@ html, body {
     font-size: 45px;
     line-height: 30px;
     font-weight: 100;
-    color: white;
+    color: #f5f5f5;
 }
 
 #article-subheading {
@@ -47,7 +47,7 @@ html, body {
     margin-right: 20px;
     margin-bottom: 0;
     width: 70%;
-    color: white;
+    color: #f5f5f5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
     font-size: 14px;
@@ -75,7 +75,7 @@ html, body {
     margin-left: 10px;
     font-size: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: #f5f5f5;
 }
 
 #image-info {
@@ -91,7 +91,7 @@ html, body {
     font-size: 8px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: right;
-    color: white;
+    color: #f5f5f5;
     float: right;
 }
 
@@ -99,7 +99,7 @@ html, body {
     margin: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
-    color: white;
+    color: #f5f5f5;
     padding-bottom: 40px;
 }
 
@@ -110,7 +110,7 @@ html, body {
     right: 0;
     width: 110vw;
     height: 70px;
-    background-color: white; 
+    background-color: #f5f5f5; 
 }
 
 #save-button {

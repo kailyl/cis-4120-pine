@@ -116,13 +116,13 @@ export default function Profile() {
                             onChange={(e) => setNewInterest(e.target.value)}
                         />
                     </div>
-                    <button id="add-2" onClick={handleAddInterest}> ADD </button>
+                    <button id="add-2" onClick={handleAddInterest}>ADD</button>
                 </div>
                 <TagList interests={interests} removeTag={removeTag}/>
                 <h2 id="profile-subheading"> Restricted Sources</h2>
                 <div id="restricted">
                     <Dropdown sources={filteredSources} setCurrentSource={setCurrentSource}/>
-                    <button id="add" onClick={handleAddClick}> ADD </button>
+                    <button id="add" onClick={handleAddClick}>ADD</button>
                 </div>
                 <div id="restricted-sources"> 
                 {restricted.map((item) => (
