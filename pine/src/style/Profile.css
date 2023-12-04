@@ -50,25 +50,40 @@ html, body {
 
 .profile-search-bar {
     margin-left: 20px;
-    margin-right: 10px;
     margin-bottom: 15px;
-    width: 85%;
-    background-color: #eeeaea; /* Gray background color */
+    width: 68%;
+    background-color: white; 
     padding: 0.5px;
-    border-radius: 20px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
-  }
+    border: 2px solid #f5f5f5;
+    height: 16px;
+}
+
+#add-2 {
+    font-family: "bayon";
+    font-size: 14px;
+    font-weight: 350;
+    background-color: #f5f5f5;
+    height: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50px;
+    border-radius: 5px;;
+    margin-left: 10px;
+    margin-top: -2px;
+}
   
 .profile-search-bar input {
     margin-left: 5px;
     border: none;
     outline: none;
     background: transparent;
-    width: 100%;
+    width: 80%;
     padding: 5px;
     font-size: 10px;
-  }
+}
 
 #nav-bar {
     margin-left: -21px;
@@ -78,6 +93,10 @@ html, body {
 #restricted {
     display: flex;
     margin-top: -10px;
+}
+
+#search-add {
+    display: flex;
 }
 
 #add {
@@ -92,4 +111,26 @@ html, body {
     width: 50px;
     border-radius: 5px;;
     margin-top: 5px;
+}
+
+#restricted-sources {
+    margin-left: 20px;
+}
+
+#source {
+    font-family: "bayon";
+    font-size: 16px;
+}
+
+#source-button {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 7px;
+    padding-right: 10px;
+    padding-left: 5px;
+    height: 18px;
+    color: black;
+    border: 2px solid #f5f5f5;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }

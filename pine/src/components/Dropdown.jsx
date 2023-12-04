@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import "../style/Dropdown.css"
 
-export default function Dropdown() {
+export default function Dropdown(props) {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedItem, setSelectedItem] = useState("Fox News");
+    const [selectedItem, setSelectedItem] = useState("");
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -12,6 +12,7 @@ export default function Dropdown() {
     const handleItemClick = (item) => {
         setSelectedItem(item);
         setIsOpen(false);
+        props.setCurrentSource(item)
     };
 
     return (
@@ -24,15 +25,11 @@ export default function Dropdown() {
           </div>
           {isOpen && (
             <div id="dropdown-content-2">
-              <a href="#" onClick={() => handleItemClick('Fox News')}>Fox News</a>
-              <a href="#" onClick={() => handleItemClick('MSNBC')}>MSNBC</a>
-              <a href="#" onClick={() => handleItemClick('Breitbart')}>Breitbart</a>
-              <a href="#" onClick={() => handleItemClick('The Huffington Post')}>The Huffington Post</a>
-              <a href="#" onClick={() => handleItemClick('Russia Today')}>Russia Today</a>
-              <a href="#" onClick={() => handleItemClick('Al Jazeera')}>Al Jazeera</a>
-              <a href="#" onClick={() => handleItemClick('CNN')}>CNN</a>
-              <a href="#" onClick={() => handleItemClick('Daily Mail')}>Daily Mail</a>
-              <a href="#" onClick={() => handleItemClick('Info Wars')}>Info Wars</a>
+              {props.sources.map((source, index) => (
+                <a href="#" key={index} onClick={() => handleItemClick(source)}>
+                  {source}
+                </a>
+              ))}
             </div> 
           )}
       </div>
