@@ -50,7 +50,7 @@ export default function Homepage() {
     return (
         cards.length > 0 ? 
             <div>
-                <p id="user"> Good morning, Peter! </p>
+                <p id="user"> Good afternoon, Pitbull! </p>
                 <p id="news"> Your daily news updates are ready. </p>
                 <div id="cards">
                     <Carousel

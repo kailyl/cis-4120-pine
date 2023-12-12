@@ -1,7 +1,7 @@
 #navbar {
     background-color: black;
-    height: 35px;
-    padding-top: 12px;
+    height: 30px;
+    padding-top: 10px;
     display: flex;
     width: 100%;
     position: fixed;
@@ -12,7 +12,7 @@
 
 .navButton {
     margin-right: 27px;
-    margin-left: 33px;
+    margin-left: 47px;
 }
 
 .navButton4 {
@@ -24,7 +24,7 @@
 .bouncingButton {
     animation: bounceAnimation 1s ease-in-out;
     margin-right: 27px;
-    margin-left: 33px;
+    margin-left: 47px;
 }
   
 @keyframes bounceAnimation {
